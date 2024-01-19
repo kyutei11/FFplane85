@@ -23,6 +23,8 @@ ATtiny85を用いた
 
 各設定時間単位と使用モーター電圧はプログラム中で調整してください。
 
+LEDのポートはデバッグ用の送信専用簡易シリアルポート（2400bps）も兼ねています。
+
 Copyright (C) 2023− Koichi Takasaki
 
 This program is free software: you can redistribute it and/or modify
