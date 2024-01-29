@@ -15,40 +15,23 @@
 //             1 CapV A/D measurement
 
 /*
-             DT coil        FET
-           (~=100 Ohm)     S   D
-  GND ---------CCC----------| |---+-----||-----GND
-  DT  >----------------------= G  |    +  -
-                                  |
-                           S   D  |
-  GND ---------[M]----------| |---+
-  MOTOR >--------------------= G  |
-                                  |
-                     LED(GR)      |
-(Serial)  220      Vf~=2.0V       |
-  LED >---vvv---+------|<---------+
+               FET   DT coil (~=100 Ohm)
+              S   D             
+  GND ---------| |-----CCC-----+-----||-----GND
+  DT  >---------= G            |    +  -
+                               |
+              S   D            |
+  GND ---------| |-----[M]-----+
+  MOTOR >-------= G            |
+                               |
+                     LED(GR)   |
+(Serial)  220      Vf~=2.0V    |
+  LED >---vvv---+------|<------+
                 |
   CapV <--------+
 
            / SW
   BTN <---o o---GND
-
-*/
-
-/* circuit using ATtiny10 for potential application(impossible due to memory limitation)...
-   (this code is for ATtiny85)
-
-                DT coil
-              (~=100 Ohm)          / SW
-  GND ------------CCC---------+---o o---+
-                              |         |
-                    LED(GR)   |         |
-          220      Vf~=2.0V   |  S   D  |  Li-ion Cap
-  GND ---vvv---+-----|<-------+---| |---+-----||-----GND
-               |                   = G       +  -
-  CapV <-------+                   |   
-                                   |
-  DT/LED >-------------------------+       
 */
 
 //  void setup
